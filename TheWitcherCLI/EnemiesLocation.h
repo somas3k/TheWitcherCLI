@@ -1,7 +1,7 @@
 #pragma once
 #include "Location.h"
 
-class EnemiesLocation : Location
+class EnemiesLocation : public virtual Location
 {
 public:
 	EnemiesLocation();
@@ -9,7 +9,9 @@ public:
 	virtual void go_ahead(Player *player);
 	~EnemiesLocation();
 
+	void set_enemies(std::list<Enemy*> enemies) { this->enemies = enemies; }
+
 private:
-	std::list<Enemy> *enemies;
+	std::list<Enemy*> enemies;
 };
 

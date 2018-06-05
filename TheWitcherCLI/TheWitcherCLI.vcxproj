@@ -152,6 +152,7 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EquipmentItem.h" />
     <ClInclude Include="FightSystem.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="ItemFactory.h" />
     <ClInclude Include="KillablePerson.h" />
@@ -177,6 +178,7 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EquipmentItem.cpp" />
     <ClCompile Include="FightSystem.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="ItemFactory.cpp" />
     <ClCompile Include="KillablePerson.cpp" />

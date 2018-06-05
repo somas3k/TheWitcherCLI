@@ -1,9 +1,7 @@
 #pragma once
 #include "Item.h"
+#include "Player.h"
 
-class Item;
-
-class Player;
 
 class Potion : public virtual Item
 {

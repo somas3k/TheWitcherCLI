@@ -1,10 +1,9 @@
 #pragma once
 #include "EquipmentItem.h"
 #include "Utils.h"
+#include "Player.h"
 
 class EquipmentItem;
-
-class Player;
 
 class Weapon : public virtual EquipmentItem
 {
