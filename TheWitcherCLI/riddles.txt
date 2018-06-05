@@ -1,0 +1,7 @@
+Stolica Polski?:Warszawa
+Najlepsza uczelnia w Polsce?:AGH
+Ile to jest 2+2*2?:6
+Ilu mieszkañców ma Polska(w milionach, zaokragl w dol)?:38
+Jak nazywa sie prezydent Polski?:Andrzej Duda
+Ktory miesiac ma 28 dni?:Kazdy
+Nie ma pradu i masz swiece i lampe naftowa, co pierwsze zapalisz?:Zapalke

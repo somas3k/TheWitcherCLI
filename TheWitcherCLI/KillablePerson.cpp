@@ -5,3 +5,5 @@
 KillablePerson::~KillablePerson()
 {
 }
+
+

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -151,18 +151,23 @@
     <ClInclude Include="EnemiesLocation.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EquipmentItem.h" />
+    <ClInclude Include="FightSystem.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemFactory.h" />
     <ClInclude Include="KillablePerson.h" />
     <ClInclude Include="Location.h" />
+    <ClInclude Include="LocationFactory.h" />
     <ClInclude Include="NonPlayerCharacter.h" />
     <ClInclude Include="NPCsLocation.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="PersonFactory.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Potion.h" />
     <ClInclude Include="Riddler.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Tradesman.h" />
+    <ClInclude Include="Utils.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="Wiseman.h" />
   </ItemGroup>
@@ -171,12 +176,16 @@
     <ClCompile Include="EnemiesLocation.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EquipmentItem.cpp" />
+    <ClCompile Include="FightSystem.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemFactory.cpp" />
     <ClCompile Include="KillablePerson.cpp" />
     <ClCompile Include="Location.cpp" />
+    <ClCompile Include="LocationFactory.cpp" />
     <ClCompile Include="NonPlayerCharacter.cpp" />
     <ClCompile Include="NPCsLocation.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="PersonFactory.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Potion.cpp" />
     <ClCompile Include="Riddler.cpp" />
@@ -188,8 +197,17 @@
     </ClCompile>
     <ClCompile Include="TheWitcherCLI.cpp" />
     <ClCompile Include="Tradesman.cpp" />
+    <ClCompile Include="Utils.cpp" />
     <ClCompile Include="Weapon.cpp" />
     <ClCompile Include="Wiseman.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="armors.txt" />
+    <Text Include="enemies_locations_names.txt" />
+    <Text Include="enemies_names.txt" />
+    <Text Include="riddles.txt" />
+    <Text Include="weapons.txt" />
+    <Text Include="wisdoms.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

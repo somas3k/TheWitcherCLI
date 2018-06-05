@@ -10,3 +10,10 @@ int Enemy::hit_value()
 {
 	return 0;
 }
+
+bool Enemy::take_attack(int attack_value)
+{
+	this->hp -= attack_value;
+	if (this->hp <= 0) return true;
+	return false;
+}

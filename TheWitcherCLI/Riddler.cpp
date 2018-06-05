@@ -3,7 +3,7 @@
 
 
 
-void Riddler::interact_with_player(Player player)
+void Riddler::interact_with_player(Player * player)
 {
 }
 

@@ -30,6 +30,9 @@ public:
 	~Player();
 	void fight_with(Enemy *enemy);
 	void set_location(Location *location) { actual_location = location; }
+	virtual bool take_attack(int attack_value);
+	virtual int hit_value();
+
 private:
 	double money;
 	int experience;

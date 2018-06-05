@@ -2,7 +2,7 @@
 #include "Wiseman.h"
 
 
-void Wiseman::interact_with_player(Player player)
+void Wiseman::interact_with_player(Player *player)
 {
 }
 
