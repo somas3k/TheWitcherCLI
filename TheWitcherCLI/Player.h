@@ -17,6 +17,8 @@ class Armor;
 
 class Enemy;
 
+class Location;
+
 class Player : public KillablePerson
 {
 public:	
@@ -27,11 +29,13 @@ public:
 	}
 	~Player();
 	void fight_with(Enemy *enemy);
+	void set_location(Location *location) { actual_location = location; }
 private:
 	double money;
 	int experience;
 	Weapon *weapon;
 	Armor *armor;
 	std::list<Item> *items;
+	Location *actual_location;
 };
 
