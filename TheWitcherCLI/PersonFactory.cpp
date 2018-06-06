@@ -4,16 +4,21 @@
 #include <iostream>
 #include <algorithm>
 #include "Utils.h"
+#include "WrongFileFormatException.h"
 
 
 Riddler * PersonFactory::generate_riddler()
 {
 	std::string riddle = riddles[generate_random_index(riddles_size)];
 	std::vector<std::string> tokens = split(riddle, ':');
-	if (tokens.size() == 2) {
-		int gaining_experience = generate_hit(100);
-		return new Riddler(std::string("Riddler"), gaining_experience, tokens.at(0), tokens.at(1));
+	try {
+		if (tokens.size() == 2) {
+			int gaining_experience = generate_hit(100);
+			return new Riddler(std::string("Riddler"), gaining_experience, tokens.at(0), tokens.at(1));
+		}
+		else throw WrongFileFormatException("File should constains only lines like: question:answer");
 	}
+	catch (WrongFileFormatException& e) { std::cout << e.what() << std::endl; }
 	return nullptr;
 }
 

@@ -173,6 +173,7 @@
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="Wiseman.h" />
+    <ClInclude Include="WrongFileFormatException.h" />
     <ClInclude Include="WrongTypedOptionException.h" />
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +207,7 @@
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="Weapon.cpp" />
     <ClCompile Include="Wiseman.cpp" />
+    <ClCompile Include="WrongFileFormatException.cpp" />
     <ClCompile Include="WrongTypedOptionException.cpp" />
   </ItemGroup>
   <ItemGroup>

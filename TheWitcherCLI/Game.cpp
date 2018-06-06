@@ -63,6 +63,7 @@ void Game::player_creator()
 	std::cin >> name;
 
 	Weapon *w = new Weapon("Basic Weapon", 0, 1, 10);
+	Weapon *w2 = new Weapon("Weapon", 0, 1, 50);
 	Armor *a = new Armor("Basic Armor", 0, 1, 30);
 	Potion *p1 = new Potion("Small Potion", 0, 20);
 	Potion *p2 = new Potion("Small Potion", 0, 20);
@@ -74,6 +75,7 @@ void Game::player_creator()
 	items.push_back(p1);
 	items.push_back(p2);
 	items.push_back(p3);
+	items.push_back(w2);
 
 	player = new Player(name, items);
 }
