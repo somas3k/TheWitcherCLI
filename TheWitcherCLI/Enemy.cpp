@@ -8,7 +8,8 @@ Enemy::~Enemy()
 
 int Enemy::hit_value()
 {
-	return 0;
+	int hit = ((double)level / MAX_LEVEL) * BASIC_HIT;
+	return hit;
 }
 
 bool Enemy::take_attack(int attack_value)

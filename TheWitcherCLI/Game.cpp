@@ -91,6 +91,7 @@ void Game::game()
 	bool exit = false;
 	while (!exit) 
 	{
+		std::cout << "----------------------------------------------------" << std::endl;
 		std::cout << (*player) << std::endl;
 		std::cout << "Actual location: " << *player->get_actual_location() << std::endl;
 		std::cout << "Choose option: " << std::endl;
@@ -144,6 +145,7 @@ void Game::location_changer()
 	}
 	if (opt != (int)locations.size()) {
 		player->set_location(locations.at(opt));
+		std::cout << locations.at(opt)->get_welcome_message() << std::endl;
 	}
 
 }

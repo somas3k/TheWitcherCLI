@@ -15,6 +15,10 @@ public:
 	~Weapon();
 	virtual void action(Player *player);
 	int get_hit() { return generate_hit(hit_value); }
+	virtual void print(std::ostream &out) const {
+		out << "Name: " << name << " Req Level: " << required_level << " Hit value: " << hit_value;
+	}
+	
 private:
 	int hit_value;
 };

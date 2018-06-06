@@ -152,9 +152,6 @@
     <ClCompile Include="EnemiesLocation.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="FightSystem.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="Utils.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>

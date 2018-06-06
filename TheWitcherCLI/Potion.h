@@ -11,6 +11,10 @@ public:
 	}
 	~Potion();
 	virtual void action(Player *player);
+protected:
+	virtual void print(std::ostream &out) const {
+		out << "Name: " << name  << " Healing value: " << healing_value;
+	}
 private:
 	int healing_value;
 };

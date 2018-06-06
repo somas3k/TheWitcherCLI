@@ -14,6 +14,9 @@ public:
 	virtual void action(Player *player);
 	int get_armor_value() { return armor_value; }
 	int take_hit(int value);
+	virtual void print(std::ostream &out) const {
+		out << "Name: " << name << " Req Level: " << required_level << " Armor value: " << armor_value;
+	}
 private:
 	int armor_value;
 };

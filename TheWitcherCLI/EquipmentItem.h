@@ -14,7 +14,7 @@ public:
 	}
 	~EquipmentItem();
 	virtual void action(Player *player) = 0;
-private:
+protected:
 	int required_level;
 };
 

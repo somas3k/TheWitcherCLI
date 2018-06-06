@@ -180,7 +180,6 @@
     <ClCompile Include="EnemiesLocation.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EquipmentItem.cpp" />
-    <ClCompile Include="FightSystem.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameException.cpp" />
     <ClCompile Include="Item.cpp" />

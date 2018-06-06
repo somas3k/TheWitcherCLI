@@ -14,6 +14,9 @@ public:
 	int hit_value();
 	virtual bool take_attack(int attack_value);
 	int get_exp() { return gaining_experience; }
+	friend ostream & operator<< (ostream &out, const Enemy &e) {
+		return out << "Name: " << e.name << " HP: " << e.hp << " Level: " << e.level << " Gaining exp: " << e.gaining_experience;
+	}
 private:
 	int gaining_experience;
 };

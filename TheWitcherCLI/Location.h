@@ -8,6 +8,8 @@ public:
 	Location(std::string n, std::string w_message) : name(n), welcome_message(w_message) {}
 	~Location();
 
+	std::string get_welcome_message() { return welcome_message; }
+
 	virtual void go_ahead(Player *player) = 0;
 	friend ostream & operator<< (ostream &out, const Location &l) {
 		out << l.name;
