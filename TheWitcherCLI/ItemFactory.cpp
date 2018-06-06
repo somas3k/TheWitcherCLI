@@ -37,7 +37,7 @@ std::list<Item*> ItemFactory::get_items_for_npc(int amount)
 		int healing_value = price / 2;
 		std::string name;
 		if (price < 34) name = "Small Potion";
-		else if (price < 64) name = "Medium Potion";
+		else if (price < 67) name = "Medium Potion";
 		else name = "Big Potion";
 		items.push_back(new Potion(name, price, healing_value));
 	}
@@ -52,7 +52,7 @@ void ItemFactory::load_names()
 	{
 		weapons_size = (int) (std::count(std::istreambuf_iterator<char>(in),
 			std::istreambuf_iterator<char>(), '\n') + 1);
-		in.seekg(0, std::ios::beg);	
+		in.seekg(0, std::ios::beg);	//ustawia iterator do zczytywania na poczatku
 		weapons_names = new std::string[weapons_size];
 		std::string line;
 		int index = 0;

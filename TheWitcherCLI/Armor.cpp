@@ -7,11 +7,14 @@ Armor::~Armor()
 }
 
 void Armor::action(Player *player)
-{	
-	Armor* actual_armor = player->get_armor();
+{
+	if (player->get_armor() != nullptr) {
+		Armor* actual_armor = player->get_armor();
+		player->get_items()->push_back(actual_armor);
+	}
 	player->set_armor(this);
 	player->get_items()->remove(this);
-	player->get_items()->push_back(actual_armor);
+	
 }
 
 int Armor::take_hit(int value)

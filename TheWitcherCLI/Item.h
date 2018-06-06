@@ -12,6 +12,9 @@ public:
 	Item(std::string n, double p) : name(n), price(p) {}
 	~Item();
 	virtual void action(Player *player) = 0;
+	friend std::ostream & operator<<(std::ostream &out, const Item &i) {
+		return out << i.name;
+	}
 private:	
 	double price;
 };

@@ -7,7 +7,7 @@ class Enemy : public virtual KillablePerson
 {
 public:
 	Enemy() {}
-	Enemy(string name, int gaining_experience) : KillablePerson(name) {
+	Enemy(string name, int gaining_experience) : KillablePerson(name), Person(name) {
 		this->gaining_experience = gaining_experience;
 	}
 	~Enemy();

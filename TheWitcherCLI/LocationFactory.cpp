@@ -10,9 +10,9 @@ LocationFactory::~LocationFactory()
 {
 }
 
-list<Location*> LocationFactory::get_enemies_locations()
+vector<Location*> LocationFactory::get_enemies_locations()
 {
-	list<Location*> locations;
+	vector<Location*> locations;
 	for (int i = 0; i < location_size; ++i) {
 		std::string name = location_names[i];
 		EnemiesLocation *loc = new EnemiesLocation(name, "Welcome in " + name);

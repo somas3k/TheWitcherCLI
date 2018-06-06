@@ -22,7 +22,7 @@ class Location;
 class Player : public KillablePerson
 {
 public:	
-	Player(std::string name, list<Item*> *items) : KillablePerson(name) { 
+	Player(std::string name, list<Item*> items) : KillablePerson(name), Person(name) { 
 		this->items = items;
 		this->money = 100;
 		this->experience = 0;
@@ -35,14 +35,18 @@ public:
 	void set_armor(Armor *armor) { this->armor = armor; }
 	Weapon* get_weapon() { return weapon;}
 	Armor* get_armor() { return armor; }
-	std::list<Item*> *get_items() { return items; }
+	std::list<Item*> *get_items() { return &items; }
+	Location* get_actual_location() {return actual_location;}
+	friend ostream & operator<< (ostream &out, const Player &p) {
+		return out << "Name: " << p.name << " HP: " << p.hp << " Level: " << p.level << " EXP: " << p.experience;
+	}
 
 private:
 	double money;
 	int experience;
 	Weapon *weapon;
 	Armor *armor;
-	std::list<Item*> *items;
+	std::list<Item*> items;
 	Location *actual_location;
 };
 

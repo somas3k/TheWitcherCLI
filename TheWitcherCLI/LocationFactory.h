@@ -8,7 +8,7 @@ public:
 	LocationFactory(std::string l_path) : locations_path(l_path) { load(); }
 	~LocationFactory();
 
-	list<Location*> get_enemies_locations();
+	vector<Location*> get_enemies_locations();
 	Location* get_npcs_location();
 private:
 	std::string locations_path;

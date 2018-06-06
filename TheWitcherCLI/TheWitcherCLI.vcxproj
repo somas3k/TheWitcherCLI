@@ -153,12 +153,14 @@
     <ClInclude Include="EquipmentItem.h" />
     <ClInclude Include="FightSystem.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameException.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="ItemFactory.h" />
     <ClInclude Include="KillablePerson.h" />
     <ClInclude Include="Location.h" />
     <ClInclude Include="LocationFactory.h" />
     <ClInclude Include="NonPlayerCharacter.h" />
+    <ClInclude Include="NotYetImplementedException.h" />
     <ClInclude Include="NPCsLocation.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="PersonFactory.h" />
@@ -171,6 +173,7 @@
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="Wiseman.h" />
+    <ClInclude Include="WrongTypedOptionException.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Armor.cpp" />
@@ -179,12 +182,14 @@
     <ClCompile Include="EquipmentItem.cpp" />
     <ClCompile Include="FightSystem.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameException.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="ItemFactory.cpp" />
     <ClCompile Include="KillablePerson.cpp" />
     <ClCompile Include="Location.cpp" />
     <ClCompile Include="LocationFactory.cpp" />
     <ClCompile Include="NonPlayerCharacter.cpp" />
+    <ClCompile Include="NotYetImplementedException.cpp" />
     <ClCompile Include="NPCsLocation.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="PersonFactory.cpp" />
@@ -202,6 +207,7 @@
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="Weapon.cpp" />
     <ClCompile Include="Wiseman.cpp" />
+    <ClCompile Include="WrongTypedOptionException.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="armors.txt" />

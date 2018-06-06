@@ -9,6 +9,10 @@ public:
 	~Location();
 
 	virtual void go_ahead(Player *player) = 0;
+	friend ostream & operator<< (ostream &out, const Location &l) {
+		out << l.name;
+		return out;
+	}
 
 private:
 	std::string name;
